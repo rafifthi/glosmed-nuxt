@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1 {
+  @apply text-5xl font-semibold md:text-6xl;
+}
+
+h2 {
+  @apply text-4xl font-semibold lg:text-5xl;
+}
+
+h3 {
+  @apply text-3xl font-semibold;
+}
+
+h4 {
+  @apply text-lg font-medium uppercase tracking-wide;
+}
+
+p {
+  @apply text-gray-500 leading-relaxed tracking-wide;
+}
+
+.footnote {
+  @apply text-xs font-medium
+}
+
+.subtitle {
+  @apply uppercase font-medium text-base;
+}
+
+.btn-primary {
+  @apply bg-primary text-white text-base font-medium tracking-wide px-5 py-3 rounded-lg hover:shadow-lg hover:shadow-primary/50 hover:bg-opacity-90 transition duration-300 ease-in-out;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white text-base text-center font-medium px-8 py-3 rounded-lg hover:shadow-lg hover:shadow-secondary/50 hover:bg-opacity-90 transition duration-300 ease-in-out;
+}
+.btn-tertiary {
+  @apply bg-white border-2 border-gray-100 text-primary text-base text-center font-medium px-8 py-3 rounded-lg hover:shadow-xl transition duration-300 ease-in-out;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white;
+  /* backdrop-filter: blur(5px); */
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  @apply text-gray-400 font-medium hover:text-primary;
+}
+
+a.nuxt-link-active {
+  text-decoration: underline;
+}
+
+a.nuxt-link-exact-active {
+  color: #00ADC7;
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
