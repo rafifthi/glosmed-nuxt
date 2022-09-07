@@ -31,7 +31,7 @@ p {
 }
 
 .subtitle {
-  @apply uppercase font-medium text-base;
+  @apply font-semibold text-base;
 }
 
 .btn-primary {
@@ -56,10 +56,7 @@ p {
 }
 
 a.nuxt-link-active {
-  text-decoration: underline;
-}
-
-a.nuxt-link-exact-active {
+  font-weight: 500;
   color: #00ADC7;
 }
 

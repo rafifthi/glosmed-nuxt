@@ -9,7 +9,7 @@
         <div v-for="blog in blogs" :key="blog.id" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 my-16">
           <article class="flex flex-col border-2 h-full bg-white rounded-lg hover:shadow-md hover:scale-[1.03] transition duration-300 ease-in-out">
             <a :href="/blogs/ + blog.attributes.slug">
-              <img alt="" class="object-cover w-full h-52" :src="'http://localhost:1337'+blog.attributes.thumbnail.data.attributes.url">
+              <img alt="" class="object-cover w-full h-52" :src="blog.attributes.thumbnail.data.attributes.url">
             </a>
             <div class="flex flex-col flex-1 p-6">
               <p class="text-xs tracking-wider uppercase hover:underline">{{ blog.attributes.tags }}</p>
@@ -43,7 +43,7 @@ export default {
         this.error = null
         this.loading = true
         const results = await this.$axios.$get(
-          'http://localhost:1337/api/blogs?populate=*&pagination[pageSize]=6'
+          '/blogs?populate=*&pagination[pageSize]=6'
         )
         this.blogs = results.data
       } catch (e) {

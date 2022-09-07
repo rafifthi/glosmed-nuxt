@@ -72,7 +72,7 @@ export default {
         this.error = null
         this.loading = true
         const results = await this.$axios.$get(
-          'http://localhost:1337/api/products?populate=*&pagination[pageSize]=12'
+          '/products?populate=*&pagination[pageSize]=12'
         )
         this.items = results.data
       } catch (e) {

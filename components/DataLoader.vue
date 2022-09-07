@@ -1,9 +1,9 @@
 <template>
   <div>
     <div v-if="loading">
-      <slot name="loading">
+      <!-- <slot name="loading">
         <Spinner />
-      </slot>
+      </slot> -->
       <slot name="loading-message">Loading your data...</slot>
     </div>
     <slot v-else-if="error" name="error">{{ error }}</slot>

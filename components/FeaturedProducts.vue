@@ -7,7 +7,7 @@
             Produk Kami
           </h2>
           <div class="subtitle text-primary text-center">
-            Lorem ipsum
+            Produk dengan kualitas terbaik
           </div>
         </div>
         <ProductCarousel />

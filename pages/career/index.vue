@@ -145,7 +145,7 @@ export default {
     careers: []
   }),
   async fetch () {
-    this.careers = await this.$axios.$get('http://localhost:1337/api/careers?populate=*')
+    this.careers = await this.$axios.$get('/careers?populate=*')
   }
 }
 </script>

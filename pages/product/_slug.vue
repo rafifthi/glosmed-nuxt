@@ -5,7 +5,7 @@
       <div class="xl:w-2/6 lg:w-2/5 w-full lg:pr-8 mb-12">
         <img
           class="w-full"
-          :src="'http://localhost:1337'+product.data.attributes.thumbnail.data.attributes.url"
+          :src="product.data.attributes.thumbnail.data.attributes.url"
         >
       </div>
       <div class="xl:w-2/5 lg:ml-8 md:ml-6 md:mt-0 mt-6">
@@ -190,7 +190,7 @@
 <script>
 export default {
   async asyncData ({ params, $axios }) {
-    const product = await $axios.$get(`http://localhost:1337/api/products/${params.slug}?populate=*`)
+    const product = await $axios.$get(`/products/${params.slug}?populate=*`)
     return { product }
   },
   data () {

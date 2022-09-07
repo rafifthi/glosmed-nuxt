@@ -90,7 +90,7 @@
             </div>
             <Pagination :total-items="24">
               <template #data="{page}">
-                <DataLoader :endpoint="`http://localhost:1337/api/products?populate=*&sort=sub_category&pagination[pageSize]=6&pagination[page]=${page}`">
+                <DataLoader :endpoint="`${$axios.defaults.baseURL}/products?populate=*&sort=sub_category&pagination[pageSize]=6&pagination[page]=${page}`">
                   <template #loading-message>
                     <h3>Loading Products...</h3>
                   </template>

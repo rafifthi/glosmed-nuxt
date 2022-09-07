@@ -49,8 +49,24 @@ export default {
   data: () => ({
     banners: []
   }),
-  async fetch () {
-    this.banners = await this.$axios.$get('http://localhost:1337/api/banners?populate=*')
+  mounted () {
+    this.findData()
+  },
+  methods: {
+    async findData () {
+      try {
+        this.error = null
+        this.loading = true
+        const results = await this.$axios.$get(
+          '/banners?populate=*'
+        )
+        this.items = results.data
+      } catch (e) {
+        console.log(e)
+        this.error = 'This resource is not loading'
+      }
+      this.loading = false
+    }
   }
 }
 </script>

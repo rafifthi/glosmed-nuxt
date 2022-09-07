@@ -31,7 +31,7 @@
 <script>
 export default {
   async asyncData ({ params, $axios }) {
-    const career = await $axios.$get(`http://localhost:1337/api/careers/${params.id}?populate=*`)
+    const career = await $axios.$get(`/careers/${params.id}?populate=*`)
     return { career }
   }
 }

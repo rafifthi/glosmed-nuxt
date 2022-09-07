@@ -5,7 +5,7 @@
       class="grid rounded-2xl shadow-md h-full bg-slate-50 hover:scale-[1.03] transition duration-300 ease-in-out"
     >
       <img
-        :src="'http://localhost:1337'+imageUrl"
+        :src="imageUrl"
         alt=""
         class="object-cover object-top w-full h-64 rounded-xl mb-6"
       >
