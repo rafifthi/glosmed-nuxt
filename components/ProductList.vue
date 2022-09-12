@@ -14,7 +14,7 @@
           <div class="flex flex-col justify-between px-6 pb-6">
             <div class="grid gap-2">
               <div class="font-medium text-sm text-primary">{{ item.attributes.brand.data.attributes.name }}</div>
-              <div class="text-lg font-medium line-clamp-2">{{ item.attributes.name }}</div>
+              <div class="text-lg font-semibold line-clamp-2">{{ item.attributes.name }}</div>
               <p class="text-xs text-slate-500">{{ item.attributes.category.data.attributes.name }}</p>
             </div>
           </div>
