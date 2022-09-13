@@ -1,6 +1,6 @@
 <template>
-  <div class="py-24 pb-20 bg-cyan-50">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 container">
+  <div class="py-24 pb-20 bg-sky-50">
+    <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 container">
       <img
         src="../assets/img/intro.png"
         alt="hero"
@@ -14,7 +14,7 @@
         <h2 class="mb-4">
           Melayani Negri
         </h2>
-        <p class="mb-10 leading-loose">
+        <p class="mb-10 leading-loose text-sm">
           Glosmed mensuplai alat-alat kesehatan dan bahan
           penunjang operasi mata lainnya ke Rumah Sakit Umum
           dan Rumah Sakit khusus Mata yang ada di seluruh Indonesia.

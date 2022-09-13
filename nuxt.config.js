@@ -5,7 +5,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Glosmed mensuplai alat-alat kesehatan dan bahan penunjang operasi mata lainnya ke Rumah Sakit Umum dan Rumah Sakit khusus Mata yang ada di seluruh Indonesia.'
+      },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     script: [
@@ -13,7 +18,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css' }
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css'
+      }
     ]
   },
 
@@ -21,8 +29,7 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

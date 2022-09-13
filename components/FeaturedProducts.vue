@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cyan-50 py-4">
+  <div class="bg-sky-50 py-4">
     <div class="container pt-12">
       <section class="mb-16 text-gray-800">
         <div class="mb-16">

@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
-  <body class="bg-gradient-to-b from-white to-cyan-50 ">
+  <body class="bg-gradient-to-b from-white to-sky-100 ">
     <div class="container bg-white py-24 lg:py-40 lg:flex items-start justify-center px-4">
       <div class="xl:w-2/6 lg:w-2/5 w-full lg:pr-8 mb-12">
         <img
@@ -38,13 +38,13 @@
                 aria-label="show or hide"
               >
                 <img
-                  v-if="showSpec == false"
+                  v-show="showSpec == false"
                   class="transform"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
                 >
                 <img
-                  v-if="showSpec == true"
+                  v-show="showSpec == true"
                   class="transform rotate-180"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
@@ -52,7 +52,7 @@
               </button>
             </div>
             <div
-              v-if="showSpec"
+              v-show="showSpec"
               id="sect"
               class="prose overflow-auto max-h-72 pt-4 text-base leading-normal pr-12 mt-4 text-gray-600"
               v-html="product.data.attributes.specification"
@@ -76,13 +76,13 @@
                 aria-label="show or hide"
               >
                 <img
-                  v-if="showArchive == false"
+                  v-show="showArchive == false"
                   class="transform"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
                 >
                 <img
-                  v-if="showArchive == true"
+                  v-show="showArchive == true"
                   class="transform rotate-180"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
@@ -90,7 +90,7 @@
               </button>
             </div>
             <div
-              v-if="showArchive"
+              v-show="showArchive"
               id="sect"
               class="prose overflow-auto max-h-72 pt-4 text-base leading-normal pr-12 mt-4 text-gray-600"
               v-html="product.data.attributes.archive"
@@ -115,13 +115,13 @@
                 aria-label="show or hide"
               >
                 <img
-                  v-if="showVideo == false"
+                  v-show="showVideo == false"
                   class="transform"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
                 >
                 <img
-                  v-if="showVideo == true"
+                  v-show="showVideo == true"
                   class="transform rotate-180"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
@@ -129,7 +129,7 @@
               </button>
             </div>
             <div
-              v-if="showVideo"
+              v-show="showVideo"
               id="sect"
               class="prose overflow-auto max-h-72 pt-4 text-base leading-normal pr-12 mt-4 text-gray-600"
               v-html="product.data.attributes.video"
@@ -154,13 +154,13 @@
                 aria-label="show or hide"
               >
                 <img
-                  v-if="showJournal == false"
+                  v-show="showJournal == false"
                   class="transform"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
                 >
                 <img
-                  v-if="showJournal == true"
+                  v-show="showJournal == true"
                   class="transform rotate-180"
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/productDetail3-svg4.svg"
                   alt="dropdown"
@@ -168,7 +168,7 @@
               </button>
             </div>
             <div
-              v-if="showJournal"
+              v-show="showJournal"
               id="sect"
               class="prose overflow-auto max-h-72 pt-4 text-base leading-normal pr-12 mt-4 text-gray-600"
               v-html="product.data.attributes.journal"
@@ -199,6 +199,18 @@ export default {
       showJournal: false,
       showVideo: false,
       showArchive: false
+    }
+  },
+  head () {
+    const product = this.product
+    return {
+      title: `${product.data.attributes.name} - Glosmed`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `${product.data.attributes.description}`
+        }]
     }
   },
   methods: {

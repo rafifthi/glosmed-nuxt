@@ -1,11 +1,11 @@
 <template>
-  <div class="py-24 pt-40 bg-gradient-to-b from-white to-cyan-50">
-    <div class="container">
+  <div class="bg-gradient-to-b from-white to-sky-100">
+    <div class="container bg-white py-24 pt-40">
       <Banner />
       <div class="w-full flex flex-col lg:flex-row">
         <!-- Sidebar -->
         <div class="xl:w-1/5 mb-8 content-start space-y-8 order-2">
-          <div class="bg-white p-6 rounded-xl min-w-fit h-fit shadow-md">
+          <div class="bg-white p-6 rounded-xl min-w-fit h-fit border">
             <h4 class="mb-3">
               Kategori
             </h4>
@@ -115,6 +115,16 @@ export default {
   data () {
     return {
     }
+  },
+  head: {
+    title: 'Glosmed - Produk Kami',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Menyediakan produk terbaik di bidang kesehatan mata.'
+      }
+    ]
   }
 }
 </script>

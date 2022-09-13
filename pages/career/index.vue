@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 pt-40 bg-gradient-to-b from-white to-cyan-100">
+  <div class="py-24 pt-40 bg-gradient-to-b from-white to-sky-100">
     <div class="container">
       <div class="p-2 text-center mb-6 lg:mb-16 grid justify-items-center">
         <div class="max-w-xl">
@@ -146,6 +146,16 @@ export default {
   }),
   async fetch () {
     this.careers = await this.$axios.$get('/careers?populate=*')
+  },
+  head: {
+    title: 'Glosmed - Career at Glosmed',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'We found our purposes through the impact we make on others. You, too, can find yours.'
+      }
+    ]
   }
 }
 </script>

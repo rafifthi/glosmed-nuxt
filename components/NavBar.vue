@@ -7,7 +7,7 @@
     <div class="container">
       <div class="flex items-center justify-between relative py-2">
         <a href="/" class="block">
-          <img src="../assets/img/logo.svg" class="h-12 lg:h-16" alt="Glosmed Logo" />
+          <img src="../assets/img/logo.svg" class="h-12 lg:h-14" alt="Glosmed Logo" />
         </a>
         <div class="flex items-center px-4">
           <button
@@ -30,13 +30,13 @@
 
           <nav
             id="nav-menu"
-            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-3 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-3 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
           >
             <ul class="block lg:flex self-center text-slate-600">
               <li class="group">
                 <NuxtLink
                   to="/About"
-                  class="py-2 mx-6 flex group-hover:text-primary"
+                  class="nuxt-link"
                 >
                   About
                 </NuxtLink>
@@ -44,7 +44,7 @@
               <li class="group">
                 <NuxtLink
                   to="/Product"
-                  class="py-2 mx-6 flex group-hover:text-primary"
+                  class="nuxt-link"
                 >
                   Product
                 </NuxtLink>
@@ -52,7 +52,7 @@
               <li class="group">
                 <NuxtLink
                   to="/Career"
-                  class="py-2 mx-6 flex group-hover:text-primary"
+                  class="nuxt-link"
                 >
                   Career
                 </NuxtLink>
@@ -60,7 +60,7 @@
               <li class="group">
                 <NuxtLink
                   to="/Blogs"
-                  class="py-2 mx-6 flex group-hover:text-primary"
+                  class="nuxt-link"
                 >
                   Blogs
                 </NuxtLink>

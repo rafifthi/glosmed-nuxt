@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center items-center py-24 bg-gradient-to-b from-white to-cyan-50">
-    <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+  <div class="flex justify-center items-center bg-gradient-to-b from-white to-sky-100">
+    <div class="bg-white 2xl:mx-auto 2xl:container lg:px-20 lg:py-48 md:py-12 md:px-6 py-24 px-4 w-96 sm:w-auto">
       <div role="main" class="flex flex-col items-center justify-center">
         <h1>Artikel</h1>
         <p class="text-center mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
@@ -33,6 +33,16 @@ export default {
     return {
       blogs: []
     }
+  },
+  head: {
+    title: 'Glosmed - Artikel',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Pantau informasi terkini dari kami'
+      }
+    ]
   },
   mounted () {
     this.findData()

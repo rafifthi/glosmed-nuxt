@@ -1,11 +1,11 @@
 <template>
-  <div class="container my-24 pt-16">
-    <div class="flex flex-col lg:flex-row justify-between">
-      <div class="max-w-xl self-center">
+  <div class="container my-24 pt-12 mb-36">
+    <div class="flex flex-col lg:flex-row justify-between gap-24">
+      <div class="max-w-lg self-center">
         <h1 class="mb-5">
           See the world better.
         </h1>
-        <p class="mb-10">
+        <p class="max-w-md mb-10 text-sm leading-loose">
           hero message is the statement that appears at the top of a web
           page—often the homepage, usually in a large font—that communicates
           something about the organization.
@@ -16,11 +16,11 @@
         </div>
       </div>
 
-      <div class="mt-12 lg:mt-9 grid justify-items-center">
+      <div class="mt-12 lg:mt-9">
         <img
           src="../assets/img/hero_img.png"
           alt="hero"
-          class="object-contain h-96"
+          class="object-contain h-full"
         >
       </div>
     </div>

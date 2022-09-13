@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cyan-900 px-4 pt-6">
+  <div class="bg-sky-900 px-4 pt-6">
     <div class="container mx-auto divide-y-2 divide-slate-500">
       <div class="py-8 text-white gap-8 lg:gap-16 grid lg:grid-cols-3">
         <div class="flex flex-col pb-4 gap-y-2">
@@ -47,10 +47,10 @@
                 placeholder="Tulis email"
                 autocomplete="off"
                 aria-label="Tulis email"
-                class="w-full px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl border-none ring-2 ring-gray-300 focus:ring-gray-500"
+                class="w-full px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-xl border-none ring-2 ring-gray-300 focus:ring-gray-500"
               >
             </form>
-            <a href="" class="btn-secondary">Subscribe</a>
+            <a href="#" class="btn-secondary">Subscribe</a>
           </div>
         </div>
       </div>
@@ -153,9 +153,9 @@ export default {
       ],
       products: [
         { name: 'Katarak', href: '/Product/Category/Katarak' },
-        { name: 'Vitreo Retina', href: '/Product/VitreoRetina' },
-        { name: 'Regraktif', href: '/Product/Refraktif' },
-        { name: 'Instruments', href: '/Product/Category/Instrumen' },
+        { name: 'Vitreo Retina', href: '/Product/Category/VitreoRetina' },
+        { name: 'Refraktif', href: '/Product/Category/Refraktif' },
+        { name: 'Instrumen', href: '/Product/Category/Instrumen' },
         { name: 'Opthalmatic Chair & Stools', href: '/Product/Category/OperatingChairStools' },
         { name: 'Opthalmatic Operating Table', href: '/Product/Category/OphthalmicOperatingTable' }
       ]

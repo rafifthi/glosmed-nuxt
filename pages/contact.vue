@@ -1,6 +1,6 @@
 <template>
-  <div class="py-24 pt-40 bg-gradient-to-b from-white to-cyan-100">
-    <div class="container">
+  <div class=" bg-gradient-to-b from-white to-sky-100">
+    <div class="container bg-white py-24 pt-40">
       <div class="px-4 grid lg:grid-cols-2">
         <div class="w-full mb-10 lg:px-10">
           <div class="mb-10 lg:hidden">
@@ -204,6 +204,16 @@ export default {
       email: '',
       message: ''
     }
+  },
+  head: {
+    title: 'Glosmed - Hubungi Kami',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Hubungi Glosmed, Kami siap membantu anda.'
+      }
+    ]
   },
   methods: {
     sendEmail (e) {

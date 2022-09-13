@@ -1,6 +1,6 @@
 <template>
-  <div class="py-24 pt-40 bg-gradient-to-b from-white to-cyan-50">
-    <div class="container">
+  <div class="bg-gradient-to-b from-white to-sky-100">
+    <div class="container py-24 pt-40 bg-white">
       <Banner />
       <div class="w-full flex flex-col lg:flex-row">
         <!-- Sidebar -->

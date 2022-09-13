@@ -33,6 +33,22 @@ export default {
   async asyncData ({ params, $axios }) {
     const career = await $axios.$get(`/careers/${params.id}?populate=*`)
     return { career }
+  },
+  head () {
+    const career = this.career
+    return {
+      title: `Glosmed - ${career.data.attributes.name}`,
+      meta: [{
+        hid: 'iOSUrl',
+        property: 'al:ios:url',
+        content: ''
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: `${career.data.attributes.description}`
+      }]
+    }
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-b from-white to-cyan-100">
+  <div class="bg-gradient-to-b from-white to-sky-50">
     <About />
     <Why class="bg-transparent" />
     <Metrics />
@@ -8,7 +8,17 @@
 
 <script>
 export default {
-  name: 'WhyPage'
+  name: 'AboutPage',
+  head: {
+    title: 'Glosmed - Tentang Kami',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Glosmed mensuplai alat-alat kesehatan dan bahan penunjang operasi mata lainnya ke Rumah Sakit Umum dan Rumah Sakit khusus Mata yang ada di seluruh Indonesia.'
+      }
+    ]
+  }
 }
 </script>
 

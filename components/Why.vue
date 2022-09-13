@@ -24,7 +24,7 @@
             >
             <div>
               <h4 class="mb-1">{{ item.name }}</h4>
-              <p>
+              <p class="text-sm leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Facere, corrupti debitis? Itaque repellendus temporibus placeat?
               </p>

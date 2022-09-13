@@ -4,7 +4,7 @@
       <slot name="item" :item="item">
         <a
           :href="/product/ + item.attributes.slug"
-          class="grid rounded-2xl shadow-md h-full bg-slate-50 hover:scale-[1.03] transition duration-300 ease-in-out"
+          class="grid rounded-2xl border hover:shadow-md h-full bg-white hover:scale-[1.03] transition duration-300 ease-in-out"
         >
           <img
             :src="item.attributes.thumbnail.data.attributes.url"

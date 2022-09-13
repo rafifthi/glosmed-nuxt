@@ -2,14 +2,14 @@
   <div class="p-6">
     <a
       :href="/product/ + slug"
-      class="grid rounded-2xl shadow-md h-full bg-slate-50 hover:scale-[1.03] transition duration-300 ease-in-out"
+      class="grid rounded-2xl border hover:shadow-md h-full bg-white hover:scale-[1.03] transition duration-300 ease-in-out"
     >
       <img
         :src="imageUrl"
         alt=""
         class="object-cover object-top w-full h-64 rounded-xl mb-6"
       >
-      <div class="flex flex-col justify-between px-6 pb-6 h-36">
+      <div class="flex flex-col justify-between px-6 pb-6 h-32">
         <div class="grid gap-2">
           <div class="font-medium text-sm text-primary">{{ brand }}</div>
           <div class="text-lg font-semibold line-clamp-2">{{ itemName }}</div>
