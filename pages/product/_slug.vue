@@ -128,10 +128,11 @@
                 >
               </button>
             </div>
+            <!-- rasio video: 320x180 -->
             <div
               v-show="showVideo"
               id="sect"
-              class="prose overflow-auto max-h-72 pt-4 text-base leading-normal pr-12 mt-4 text-gray-600"
+              class="overflow-auto max-h-72 pt-4 text-base leading-normal pr-12 mt-4 text-gray-600"
               v-html="product.data.attributes.video"
             >
             </div>
@@ -178,7 +179,7 @@
         </div>
         <a
           href="https://wa.me/08118955662?text=Hi"
-          class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-base flex items-center justify-center leading-none text-white bg-secondary w-full py-4 hover:bg-cyan-900"
+          class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-base flex items-center justify-center leading-none text-white bg-secondary w-full py-4 hover:bg-cyan-900 transition duration-300 ease-in-out"
         >
           Pesan Sekarang
         </a>

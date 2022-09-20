@@ -5,6 +5,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'og:title', name: 'og:title', content: 'Glosmed | Distributor Alat Kesehatan Mata' },
+      { hid: 'og:image', name: 'og:image', content: '~/static/icon.png' },
+      { hid: 'og:image:alt', name: 'og:image:alt', content: 'Glosmed Company Logo' },
       {
         hid: 'description',
         name: 'description',
@@ -77,8 +80,22 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    meta: {
+      title: {
+        title: 'Glosmed - Distributor Alat Kesehatan Mata',
+        author: 'Rafif Fathi',
+        description: 'Glosmed mensuplai alat-alat kesehatan dan bahan penunjang operasi mata lainnya ke Rumah Sakit Umum dan Rumah Sakit khusus Mata yang ada di seluruh Indonesia.',
+        theme_color: '#00ADC7',
+        lang: 'id',
+        ogHost: 'https://glosmed.com'
+      }
+    },
     manifest: {
-      lang: 'en'
+      name: 'Glosmed - Distributor Alat Kesehatan Mata',
+      short_name: 'Glosmed',
+      theme_color: '#00ADC7',
+      description: '',
+      lang: 'id'
     }
   },
 

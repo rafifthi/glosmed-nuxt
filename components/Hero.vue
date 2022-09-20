@@ -11,7 +11,7 @@
           something about the organization.
         </p>
         <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-          <a href="/Product" class="btn-secondary">Pesan Sekarang</a>
+          <a href="/Product" class="btn-secondary shadow-lg shadow-secondary/50">Pesan Sekarang</a>
           <!-- <a href="#" class="btn-tertiary">Malesuada</a> -->
         </div>
       </div>

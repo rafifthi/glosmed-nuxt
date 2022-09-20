@@ -1,8 +1,8 @@
 <template>
   <div class="bg-sky-900 px-4 pt-6">
-    <div class="container mx-auto divide-y-2 divide-slate-500">
+    <div class="container divide-y-2 divide-slate-500">
       <div class="py-8 text-white gap-8 lg:gap-16 grid lg:grid-cols-3">
-        <div class="flex flex-col pb-4 gap-y-2">
+        <div class="flex flex-col pb-4 gap-y-3">
           <a href="/">
             <img src="@/assets/img/logo_white.svg" alt="" class="w-fit">
           </a>
@@ -47,7 +47,7 @@
                 placeholder="Tulis email"
                 autocomplete="off"
                 aria-label="Tulis email"
-                class="w-full px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-xl border-none ring-2 ring-gray-300 focus:ring-gray-500"
+                class="w-full px-3 py-2 placeholder-gray-500 text-black text-sm rounded-md border-none"
               >
             </form>
             <a href="#" class="btn-secondary">Subscribe</a>
@@ -117,7 +117,7 @@
             </svg>
           </a>
           <!-- WhatsApp -->
-          <a href="" target="_blank" class="hover:text-secondary">
+          <a href="https://wa.me/08118955662?text=Hi" target="_blank" class="hover:text-secondary">
             <svg
               role="img"
               width="20"
@@ -146,10 +146,10 @@ export default {
   data () {
     return {
       company: [
-        { name: 'About', href: '/About' },
-        { name: 'Contact', href: '/Contact' },
-        { name: 'Career', href: '/Career' },
-        { name: 'Blogs', href: '/Blogs' }
+        { name: 'Tentang Kami', href: '/about' },
+        { name: 'Kontak', href: '/contact' },
+        { name: 'Karir', href: '/career' },
+        { name: 'Berita', href: '/news' }
       ],
       products: [
         { name: 'Katarak', href: '/Product/Category/Katarak' },

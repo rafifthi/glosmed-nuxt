@@ -186,7 +186,7 @@
                 placeholder="Beritahu kami sesuatu"
               />
             </div>
-            <input id="button" type="submit" class="btn-secondary w-full md:w-fit" value="Kirim">
+            <input id="button" type="submit" class="btn-secondary shadow-lg shadow-secondary/50 w-full md:w-fit" value="Kirim">
           </form>
         </div>
       </div>

@@ -35,41 +35,41 @@
             <ul class="block lg:flex self-center text-slate-600">
               <li class="group">
                 <NuxtLink
-                  to="/About"
+                  to="/about"
                   class="nuxt-link"
                 >
-                  About
+                  Tentang Kami
                 </NuxtLink>
               </li>
               <li class="group">
                 <NuxtLink
-                  to="/Product"
+                  to="/product"
                   class="nuxt-link"
                 >
-                  Product
+                  Produk
                 </NuxtLink>
               </li>
               <li class="group">
                 <NuxtLink
-                  to="/Career"
+                  to="/career"
                   class="nuxt-link"
                 >
-                  Career
+                  Karir
                 </NuxtLink>
               </li>
               <li class="group">
                 <NuxtLink
-                  to="/Blogs"
+                  to="/news"
                   class="nuxt-link"
                 >
-                  Blogs
+                  Berita
                 </NuxtLink>
               </li>
               <li class="group">
                 <a
-                  href="/Contact"
+                  href="/contact"
                   class="py-2 lg:ml-6 flex btn-primary"
-                >Contact Us</a>
+                >Kontak Kami</a>
               </li>
             </ul>
           </nav>

@@ -2,8 +2,8 @@
   <div class="flex justify-center items-center bg-gradient-to-b from-white to-sky-100">
     <div class="bg-white 2xl:mx-auto 2xl:container lg:px-20 lg:py-48 md:py-12 md:px-6 py-24 px-4 w-96 sm:w-auto">
       <div role="main" class="flex flex-col items-center justify-center">
-        <h1>Artikel</h1>
-        <p class="text-center mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
+        <h1>Berita</h1>
+        <p class="text-center text-sm mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
       </div>
       <div class="lg:flex items-stretch md:mt-12 mt-8">
         <div v-for="blog in blogs" :key="blog.id" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 my-16">
