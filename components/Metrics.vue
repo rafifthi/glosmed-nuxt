@@ -11,7 +11,7 @@
 
       <div class="w-full">
         <div class="flex flex-wrap">
-          <div v-for="item in factors" :key="item.name" class="flex py-4">
+          <div v-for="item in factors" :key="item.icon" class="flex py-4">
             <img
               :src="require('../assets/img/' + item.icon)"
               class="h-12 mx-6 self-center"

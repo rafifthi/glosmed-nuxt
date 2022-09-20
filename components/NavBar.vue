@@ -33,36 +33,12 @@
             class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-3 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
           >
             <ul class="block lg:flex self-center text-slate-600">
-              <li class="group">
+              <li v-for="item in items" :key="item.name" class="group" @click="clickItem()">
                 <NuxtLink
-                  to="/about"
+                  :to="item.href"
                   class="nuxt-link"
                 >
-                  Tentang Kami
-                </NuxtLink>
-              </li>
-              <li class="group">
-                <NuxtLink
-                  to="/product"
-                  class="nuxt-link"
-                >
-                  Produk
-                </NuxtLink>
-              </li>
-              <li class="group">
-                <NuxtLink
-                  to="/career"
-                  class="nuxt-link"
-                >
-                  Karir
-                </NuxtLink>
-              </li>
-              <li class="group">
-                <NuxtLink
-                  to="/news"
-                  class="nuxt-link"
-                >
-                  Berita
+                  {{ item.name }}
                 </NuxtLink>
               </li>
               <li class="group">
@@ -82,6 +58,16 @@
 <script>
 export default {
   name: 'NavBar',
+  data () {
+    return {
+      items: [
+        { name: 'Tentang Kami', href: '/about' },
+        { name: 'Produk', href: '/product' },
+        { name: 'Karir', href: '/career' },
+        { name: 'Berita', href: '/news' }
+      ]
+    }
+  },
   beforeMount () {
     window.addEventListener('scroll', this.handleScroll)
   },
@@ -102,9 +88,15 @@ export default {
     handleClick () {
       const hamburger = document.querySelector('#hamburger')
       const navMenu = document.querySelector('#nav-menu')
-
       hamburger.classList.toggle('hamburger-active')
       navMenu.classList.toggle('hidden')
+    },
+
+    clickItem () {
+      const hamburger = document.querySelector('#hamburger')
+      const navMenu = document.querySelector('#nav-menu')
+      hamburger.classList.remove('hamburger-active')
+      navMenu.classList.add('hidden')
     }
   }
 }

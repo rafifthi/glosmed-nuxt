@@ -94,7 +94,7 @@ export default {
       name: 'Glosmed - Distributor Alat Kesehatan Mata',
       short_name: 'Glosmed',
       theme_color: '#00ADC7',
-      description: '',
+      description: 'Glosmed mensuplai alat-alat kesehatan dan bahan penunjang operasi mata lainnya ke Rumah Sakit Umum dan Rumah Sakit khusus Mata yang ada di seluruh Indonesia.',
       lang: 'id'
     }
   },
