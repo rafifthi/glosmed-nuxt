@@ -3,7 +3,7 @@
     <a
       title="Kontak Kami"
       class="fixed z-90 bottom-10 right-8 bg-green-400 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-green-500 hover:drop-shadow-2xl hover:opacity-80 duration-300"
-      href="https://api.whatsapp.com/send?phone=08118955662"
+      href="https://api.whatsapp.com/send?phone=628118955662"
     >
       <svg
         class="w-10 h-10 text-white fill-current"

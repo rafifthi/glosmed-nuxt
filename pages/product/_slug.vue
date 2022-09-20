@@ -178,7 +178,7 @@
           </div>
         </div>
         <a
-          href="https://api.whatsapp.com/send?phone=08118955662"
+          href="https://api.whatsapp.com/send?phone=628118955662"
           class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-base flex items-center justify-center leading-none text-white bg-secondary w-full py-4 hover:bg-cyan-900 transition duration-300 ease-in-out"
         >
           Pesan Sekarang
