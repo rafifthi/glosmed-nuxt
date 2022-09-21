@@ -91,10 +91,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-    }
-  },
   head: {
     title: 'Glosmed - Produk Kami',
     meta: [

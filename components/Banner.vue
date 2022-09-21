@@ -1,25 +1,11 @@
 <template>
   <div id="carouselExampleControls" class="carousel slide relative mb-8 lg:mb-24" data-bs-ride="carousel">
-    <div class="carousel-inner relative w-full overflow-hidden h-64 rounded-2xl">
+    <div v-for="banner in banners" :key="banner.id" class="carousel-inner relative h-fit w-full overflow-hidden rounded-2xl">
       <div class="carousel-item active relative float-left w-full">
         <img
-          src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+          :src="banner.attributes.thumbnail.data.attributes.url"
           class="block w-full"
-          alt="Wild Landscape"
-        >
-      </div>
-      <div class="carousel-item relative float-left w-full">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-          class="block w-full"
-          alt="Camera"
-        >
-      </div>
-      <div class="carousel-item relative float-left w-full">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-          class="block w-full"
-          alt="Exotic Fruits"
+          :alt="banner.attributes.name"
         >
       </div>
     </div>
@@ -60,7 +46,8 @@ export default {
         const results = await this.$axios.$get(
           '/banners?populate=*'
         )
-        this.items = results.data
+        this.banners = results.data
+        console.log('data banner', this.banners)
       } catch (e) {
         console.log(e)
         this.error = 'This resource is not loading'
